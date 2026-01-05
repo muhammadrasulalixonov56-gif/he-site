@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>KFC Buyurtma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="images/rasm.jpg" alt="Rasm">
+
+<div class="card">
+
+    <!-- CHEGIRMA -->
+    <div class="badge">🔥 Bugun chegirma!</div>
+
+    <h1>🍗 KFC 🍗</h1>
+
+    <!-- TAYMER -->
+    <div id="timer">⏳ Chegirma tugashiga: 05:00</div>
+
+    <img src="kfc.jpg" alt="KFC">
+
+    <p id="info">
+        Bir luqmada farqni his qilasiz — haqiqiy KFC ta’mi shu yerda!
+    </p>
+
+    <!-- ACHCHIQ TANLOV -->
+    <div class="levels">
+        <label><input type="radio" name="spice" checked> 😌 Oddiy</label>
+        <label><input type="radio" name="spice"> 🙂 O‘rtacha</label>
+        <label><input type="radio" name="spice"> 🔥 Achchiq</label>
+    </div>
+
+    <input type="text" id="ism" placeholder="Ismingiz kiriting">
+
+    <input type="tel"
+           id="telefon"
+           placeholder="+998 (__) ___-__-__"
+           oninput="formatPhone(this)">
+
+    <button onclick="buyurtma()">Buyurtma berish</button>
+
+    <!-- LOADING -->
+    <div id="loading">⏳ Buyurtma yuborilmoqda...</div>
+
+    <!-- SUCCESS -->
+    <div id="success">✅ Buyurtma qabul qilindi!</div>
+
+    <!-- INFO TOGGLE -->
+    <button class="toggle" onclick="toggleInfo()">ℹ️ KFC haqida</button>
+
+    <div class="info-box" id="infoBox">
+        <p>KFC — 1952-yildan beri faoliyat yuritayotgan global brend.</p>
+        <p>📍 O‘zbekiston bo‘ylab filiallar</p>
+        <p>📞 +998 71 200 54 54</p>
+        <p>🌐 Instagram | Telegram | Facebook | kfc.com</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+      
